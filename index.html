@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-gifOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" id="mainCSS">
+    <script src="js/estilos.js" defer></script>
+</head>
+<body>
+    <div class="contain-bienvenidos">
+        <h2 class="bienvenidos">
+            ¡Bienvenidos/as a Guifos.com!------Donde los guifos están.////// Numero de visitas:12.765.803
+        </h2>
+    </div>
+   
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html">
+                <img class="logo-png" src="gifOS_UI/assets/logo.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="crear-gif.html" class="border link-create">Crear Guifos</a></li>
+                <li>
+                    <a href="#" class="border link-button">
+                        Elegir tema
+                        <span class="border-arrow">
+                            <img src="images/arrow.png" alt="arrow">
+                        </span>
+                    </a>
+                    <ul class="dropdown">
+                        <li><button id="dayTheme">Sailor day</button></li>
+                        <li><button id="nightTheme">Sailor night</button></li>
+                    </ul>
+                </li>
+                <li class="mis-gifos"><a href="mis-gifos.html" class="mis-gifos"><span class="subrayado">M</span><span
+                            class="mis-gifos-text">is Guifos</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="form">
+            <h2 class="buscar">
+                Buscar
+            </h2>
+            <form class="flex-form" id="formBusqueda">
+                <input id="campoDeBusqueda" class="input" type="search"
+                    placeholder="Busca gifs, hashtags, temas, busca lo que quieras...">
+                <button class="button" type="submit">
+                    <img src="images/lupa.png" alt="lupa" style="vertical-align: middle">
+                    Buscar
+                </button>
+            </form>
+        </div>
+        <!-- Tag relacionados con la busqueda -->
+        <div id="listaTagRelacionados">
+
+        </div>
+
+        <!-- Resultados de la busqueda -->
+        <div id="resultadosBusqueda">
+            <h3 class="section-title">Resultados de tu búsqueda:</h3>
+            <div class="gifs-container" id="resultsContainer">
+                <!-- Contenido llegará desde la API -->
+            </div>
+        </div>
+
+        <h3 class="section-title">Hoy te sugerimos:</h3>
+        <div class="gifs-container" id="sugestedContainer">
+            <!-- Contenido llegará desde la API -->
+        </div>
+
+        <h3 class="section-title">Tendencias:</h3>
+        <div class="gifs-container" id="trendingContainer">
+            <!-- Contenido llegará desde la API -->
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

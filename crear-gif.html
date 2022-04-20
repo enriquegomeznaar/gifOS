@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proyecto-gifOS</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<link rel="stylesheet" href="css/styles.css" id="mainCSS">
+</head>
+
+<body>
+	<div class="contain-bienvenidos">
+		<h2 class="bienvenidos">
+			¡Bienvenidos/as a Guifos.com!------Donde los guifos están.////// Numero de visitas:12.765.803
+		</h2>
+	</div>
+
+	<div class="container">
+		<nav class="nav">
+			<a href="index.html">
+				<img class="logo-png" src="gifOS_UI/assets/logo.png" alt="logo">
+			</a>
+			<ul>
+				<li><a href="crear-gif.html" class="border">Crear Guifos</a></li>
+				<li>
+					<a href="#" class="border">
+						Elegir tema
+						<span class="border-arrow">
+							<img src="images/arrow.png" alt="arrow">
+						</span>
+					</a>
+					<ul class="dropdown">
+						<li><button id="dayTheme">Sailor day</button></li>
+						<li><button id="nightTheme">Sailor night</button></li>
+					</ul>
+				</li>
+				<li><a href="mis-gifos.html" class="mis-guifos"><span class="subrayado">M</span>is Guifos</a></li>
+			</ul>
+		</nav>
+
+		<!-- video-display -->
+		<div class="video-display">
+			<div class="video-display-header">
+				Crear guifos
+			</div>
+
+			<!-- Texto Intro -->
+			<div class="video-content">
+				<h2>
+					<img src="images/window-img.png" alt="">
+					Aquí podrás crear tus propios guifos
+				</h2>
+
+				<p>
+					Crear tu <b>guifo</b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos
+					personalizados. Los pasos para crear tu guifo son: <br>
+					<b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso) <br>
+					<b>2)</b> Capturar tu momento guifo <br>
+					<b>3)</b> Revisar el momento <br>
+					<b>4)</b> Listo para subir y compartir! <br>
+					¿Quieres comenzar a crear tu guifo ahora?
+				</p>
+
+				<div class="video-display-buttons">
+					<a href="index.html" class="video-stop">CANCELAR</a>
+					<button class="video-rec">COMENZAR</button>
+				</div>
+			</div>
+
+			<div class="video-captura">
+				<!-- Acá se muestra la webcam -->
+				<video id="video"></video>
+				<button class="boton-video-captura">
+					<span><img src="images/camera.svg" alt=""></span>
+					<i>Capturar</i>
+				</button>
+				<button class="boton-video-captura" id="stopRecord" style="display: none;">
+					<span><img src="images/camera.svg" alt=""></span>
+					<i>Detener</i>
+				</button>
+			</div>
+
+			<div class="gif-preview">
+				<img src="" alt="">
+				<button class="boton-video-captura" id="repetir" style="padding: 10px 30px;">
+					<i>Repetir captura</i>
+				</button>
+				<button class="boton-video-captura" id="subir" style="padding: 10px 30px;">
+					<i>Subir GIF</i>
+				</button>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
+	<script src="js/crear-gifs.js"></script>
+</body>
+
+</html>
